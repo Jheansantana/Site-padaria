@@ -5,42 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pão na chapa</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img width="200px" class="logo-header" src="img/logo.png" alt="Pão, Pão na Chapa,Logo, Logo Padaria" />
+        <nav class="Menu">
+            <ul>
+                <li>
+                    <a href="#introducao">Início</a>
+                </li>
+
+                <li>
+                    <a href="#sobre-nos">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#produtos">Produtos</a>
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
     <main>
-        <header>
-            <h1>Padaria Pão na Chapa</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a>Início</a>
-                    </li>
+        <section id="introducao">
+            <div>
+                <h2> Bem-vindo a Padaria Pão na Chapa </h2>
+                <p>Na Padaria Pão na chapa, oferecemos o melhor pão caseiro,
+                    assado diariamente com ingredientes frescos e de alta
+                    qualidade. Além de encontrar o melhor pão da região de
+                    Mauá, e com uma textura incrivel e deliciosa!
+                </p>
 
-                    <li>
-                        <a>Sobre</a>
-                    </li>
-                    <li>
-                        <a>Produtos</a>
-                    </li>
+            </div>
+            <img width="300px" src="./img/pao.png" alt="pão, cesta de pães, conjunto de pães">
+            <div>
 
-                    <li>
-                        <a>Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            </div>
 
-        <section>
-            <h2> Bem-vindo a Padaria Pão na Chapa </h2>
-            <p>Na Padaria Pão na chapa, oferecemos o melhor pão caseiro,
-                assado diariamente com ingredientes frescos e de alta
-                qualidade. Além de encontrar o melhor pão da região de
-                Mauá, e com uma textura incrivel e deliciosa!
-            </p>
         </section>
 
-        <section>
+        <section id="sobre-nos">
             <h2>Sobre nós</h2>
             <p>
                 Fundada em 1990, a padaria Pão na chapa é referencia na região
@@ -50,11 +67,11 @@
             </p>
         </section>
 
-        <section>
+        <section id="produtos">
             <h2>Nossos produtos</h2>
-            <div>
+            <div class="conteudo-produtos">
 
-                <div>
+                <div class="produtos">
                     <h3>Pães</h3>
                     <p>
                         Temos uma variedade de pães, como pão francês,
@@ -62,7 +79,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="produtos">
                     <h3>Bolos</h3>
                     <p>
                         Oferecemos bolos fresquinhos, tortas e uma seleção de doces
@@ -70,7 +87,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="produtos">
                     <h3>Salgados</h3>
                     <p>
                         Seja para um lanche rápido ou uma festa, nossos salgados
@@ -80,8 +97,19 @@
                 </div>
             </div>
         </section>
-
     </main>
+
+    <footer>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contato@paonachapa.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua do Pão, 123 - Centro - São Paulo</p>
+        </section>
+        <p class="direitos-autorais">&copy; 2024 - Padaria Pão na Chapa -
+            Todos Direitos Reservados</p>
+    </footer>
+
 </body>
 
 </html>
