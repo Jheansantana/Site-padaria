@@ -1,7 +1,8 @@
-html{
+html {
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
 }
+
 body {
     margin: 0;
     background-color: rgb(254, 235, 200);
@@ -37,30 +38,31 @@ header {
     font-size: 30px;
 }
 
-#introducao{
+#introducao {
     display: flex;
     min-height: 250px;
     align-items: center;
 }
-#introducao div{
+
+#introducao div {
     width: 50%;
     padding-right: 100px;
     padding-left: 100px;
     margin-top: 50px;
 }
 
-#sobre-nos{
-padding-left: 100px;
-padding-right: 100px;
-background-color: rgb(173, 113, 0);
-border-radius: 30px;
-min-height: 200px;
-display: flex;
-flex-direction: column;
-color: white;
+#sobre-nos {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(173, 113, 0);
+    border-radius: 30px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
-#produtos{
+#produtos {
     padding-left: 100px;
     padding-right: 100px;
     background-color: rgb(255, 166, 0);
@@ -69,25 +71,25 @@ color: white;
     margin-right: 10px;
 }
 
-#produtos h2{
+#produtos h2 {
     margin-top: 100px;
     margin-bottom: 10px;
     text-align: center;
     padding-top: 10px;
 }
 
-.conteudo-produtos{
+.conteudo-produtos {
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;
 }
 
-.produto{
+.produto {
     width: 200px;
     text-align: center;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     border-radius: 20px;
@@ -97,58 +99,117 @@ footer{
     padding-top: 25px;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
-.direitos-autorais{
+.direitos-autorais {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-@media (max-width: 875px){
-    #introducao{
-        flex-direction: column;
-        text-align: center;
-    }
-    #introducao div{
-        padding-right: 0;
-        padding-left: 0;
-        width: 80%;
-    }
-    header{
-        padding-left: 0;
-        padding-right: 0;
-        flex-direction: column;
-    }
+#form-contato {
+    width: 60%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .logo-header{
-        width: 300px;
-    }
-    .conteudo-produtos{
-        flex-direction: column;
-        align-items: center;
-    }
+.grupo{
+    font-weight: bold;
+    color: black;
+}
 
-    #produtos{
-        padding-left: 0;
-        padding-right: 0         ;
-    }
+.grupo input,
+.grupo textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
 
-    .menu ul{
-        padding-left: 0;
-        margin: auto;
-    }
-    
-    .produto{
-        width: 80%;
-    }
+.grupo input:focus,
+.grupo textarea:focus{
+    border-color: chocolate;
+    outline: none;
+}
 
-    #sobre-nos{
-        text-align: center;
-    }
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+#contato button{
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(202, 104, 34);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3 ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contato button:hover{
+    background-color: rgb(128, 67, 11);
 }
 
 
 
+@media (max-width: 875px) {
+    #introducao {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    #introducao div {
+        padding-right: 0;
+        padding-left: 0;
+        width: 80%;
+    }
+
+    header {
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+    }
+
+    .logo-header {
+        width: 300px;
+    }
+
+    .conteudo-produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #produtos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .menu ul {
+        padding-left: 0;
+        margin: auto;
+    }
+
+    .produto {
+        width: 80%;
+    }
+
+    #sobre-nos {
+        text-align: center;
+    }
+}
